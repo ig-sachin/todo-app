@@ -1,0 +1,79 @@
+.todo__list {
+  text-align: center;
+}
+.ListItemText {
+  display: grid;
+  grid-row: auto;
+  grid-gap: 10px;
+}
+
+.editdelete {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -0.5rem;
+  left: 2rem;
+}
+#edit::after,
+#edit::before {
+  display: flex;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: 0.5s;
+  background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4);
+}
+#edit {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  display: inline-block;
+  background: #0a773b;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+#edit:hover::before {
+  inset: -3px;
+}
+#edit:hover::after {
+  inset: -3px;
+  filter: blur(20px);
+}
+#deletee {
+  color: rgb(216, 67, 67);
+}
+#deletee:hover {
+  font-size: 2rem;
+  transition: 0.5s;
+  filter: blur(2px);
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal input {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center button {
+  border: 1px dotted green;
+  margin: 0 1rem;
+}
+.center button:hover {
+  background: linear-gradient(45deg, #00ccff, #1d37b9, #d400d4);
+  filter: blur(0.1px);
+}

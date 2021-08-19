@@ -1,0 +1,31 @@
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  width: 50%;
+  justify-content: center;
+}
+.app h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.app > div {
+  display: flex;
+  justify-content: center;
+}
+.listitem {
+  position: relative;
+  left: -4rem;
+}
+#addtodo {
+  color: white;
+}
+#addtodo:hover {
+  background-color: linear-gradient(45deg, #16da16, #974aca, #0e00d4);
+  filter: blur(1px);
+}
